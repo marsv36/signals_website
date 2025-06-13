@@ -1,0 +1,15 @@
+{
+  "name": "signals-website",
+  "version": "1.0.0",
+  "description": "Signals company website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "format": "prettier --write \"**/*.{html,js,css}\"",
+    "build": "node build-index.js"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.8"
+  }
+} 

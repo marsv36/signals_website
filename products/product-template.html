@@ -1,0 +1,253 @@
+<!--
+  title: Product Name
+  slug: product-slug
+  og: img/products/product-image.png
+-->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Name | Signals</title>
+  <meta name="description" content="Detailed description of the product (max 160 characters)">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/signals.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/utilities.min.css">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Product Name | Signals">
+  <meta property="og:description" content="Detailed description of the product (max 160 characters)">
+  <meta property="og:image" content="https://www.signals.cz/img/products/product-image.png">
+  <meta property="og:url" content="https://www.signals.cz/products/product-slug.html">
+  <meta property="og:type" content="website">
+  
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" defer></script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied'
+    });
+  </script>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="container mx-auto">
+      <a href="../index.html" class="logo">
+        <img src="../img/logo.svg" alt="Signals logo" width="120" height="40">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Domů</a></li>
+        <li><a href="../products/_index.html" class="active">Produkty</a></li>
+        <li><a href="../index.html#sluzby">Služby</a></li>
+        <li><a href="../index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Product Hero -->
+  <section class="py-8">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1>Product Name</h1>
+          <p class="text-lg mb-4">Short compelling description of the product that highlights its main benefit.</p>
+          <a href="../index.html#kontakt" class="btn">Kontaktujte nás</a>
+        </div>
+        <div>
+          <img src="../img/products/product-image.png" alt="Product Name" class="rounded-lg shadow-lg" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Features -->
+  <section class="py-8 bg-gray-light">
+    <div class="container mx-auto">
+      <h2 class="text-center mb-8">Hlavní výhody</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-4" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          <h3>Feature 1</h3>
+          <p>Description of the first key feature and its benefits to the user.</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-4" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          <h3>Feature 2</h3>
+          <p>Description of the second key feature and its benefits to the user.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-4" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <h3>Feature 3</h3>
+          <p>Description of the third key feature and its benefits to the user.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Description -->
+  <section class="py-8">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h2>O produktu</h2>
+          <p>Detailed description of the product, its purpose, and how it works. This section should provide comprehensive information about what the product does and why it's valuable to the customer.</p>
+          <p>Continue with more details about the product, its features, and benefits. Explain how it solves specific problems for the user and what makes it unique compared to alternatives.</p>
+          
+          <h3 class="mt-8">Pro koho je produkt určen</h3>
+          <ul>
+            <li>Target audience segment 1</li>
+            <li>Target audience segment 2</li>
+            <li>Target audience segment 3</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h2>Technické specifikace</h2>
+          <table class="w-full border-collapse">
+            <tr>
+              <th class="text-left py-2 border-b">Specifikace</th>
+              <th class="text-left py-2 border-b">Hodnota</th>
+            </tr>
+            <tr>
+              <td class="py-2 border-b">Specification 1</td>
+              <td class="py-2 border-b">Value 1</td>
+            </tr>
+            <tr>
+              <td class="py-2 border-b">Specification 2</td>
+              <td class="py-2 border-b">Value 2</td>
+            </tr>
+            <tr>
+              <td class="py-2 border-b">Specification 3</td>
+              <td class="py-2 border-b">Value 3</td>
+            </tr>
+            <tr>
+              <td class="py-2 border-b">Specification 4</td>
+              <td class="py-2 border-b">Value 4</td>
+            </tr>
+            <tr>
+              <td class="py-2">Specification 5</td>
+              <td class="py-2">Value 5</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-8 bg-secondary text-white text-center">
+    <div class="container mx-auto">
+      <h2>Máte zájem o tento produkt?</h2>
+      <p class="mb-8">Kontaktujte nás pro více informací nebo nezávaznou konzultaci.</p>
+      <a href="../index.html#kontakt" class="btn">Kontaktujte nás</a>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="py-8">
+    <div class="container mx-auto">
+      <h2 class="text-center mb-8">Související produkty</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Related Product 1 -->
+        <div class="product-card">
+          <a href="related-product-1.html">
+            <img src="../img/products/related-product-1.png" alt="Related Product 1" loading="lazy">
+            <h3 class="p-4">Related Product 1</h3>
+          </a>
+        </div>
+        
+        <!-- Related Product 2 -->
+        <div class="product-card">
+          <a href="related-product-2.html">
+            <img src="../img/products/related-product-2.png" alt="Related Product 2" loading="lazy">
+            <h3 class="p-4">Related Product 2</h3>
+          </a>
+        </div>
+        
+        <!-- Related Product 3 -->
+        <div class="product-card">
+          <a href="related-product-3.html">
+            <img src="../img/products/related-product-3.png" alt="Related Product 3" loading="lazy">
+            <h3 class="p-4">Related Product 3</h3>
+          </a>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="_index.html" class="btn btn-outline">Zobrazit všechny produkty</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="../img/logo.svg" alt="Signals logo" width="120" height="40" class="mb-4">
+          <p>Profesionální řešení pro vaše podnikání</p>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <address>
+            Signals s.r.o.<br>
+            Ulice 123<br>
+            120 00 Praha 2<br>
+            <a href="mailto:signals@signals.cz">signals@signals.cz</a><br>
+            <a href="tel:+420123456789">+420 123 456 789</a>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3>Odkazy</h3>
+          <ul>
+            <li><a href="../index.html">Domů</a></li>
+            <li><a href="_index.html">Produkty</a></li>
+            <li><a href="../index.html#sluzby">Služby</a></li>
+            <li><a href="../index.html#kontakt">Kontakt</a></li>
+            <li><a href="../privacy-policy.html">Ochrana osobních údajů</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Signals s.r.o. Všechna práva vyhrazena.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Děkujeme za zprávu | Signals</title>
+  <meta name="description" content="Děkujeme za vaši zprávu. Brzy se vám ozveme.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/signals.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/utilities.min.css">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Děkujeme za zprávu | Signals">
+  <meta property="og:description" content="Děkujeme za vaši zprávu. Brzy se vám ozveme.">
+  <meta property="og:image" content="https://www.signals.cz/img/og-default.png">
+  <meta property="og:url" content="https://www.signals.cz/dekujeme.html">
+  <meta property="og:type" content="website">
+  
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" defer></script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied'
+    });
+  </script>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="container mx-auto">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Signals logo" width="120" height="40">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="products/_index.html">Produkty</a></li>
+        <li><a href="index.html#sluzby">Služby</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Thank You Section -->
+  <section class="py-16">
+    <div class="container mx-auto text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-8" width="96" height="96" fill="none" viewBox="0 0 24 24" stroke="#ff6600">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      
+      <h1>Děkujeme za Vaši zprávu!</h1>
+      <p class="text-lg mb-8">Vaše zpráva byla úspěšně odeslána. Náš tým se vám ozve co nejdříve.</p>
+      
+      <div class="mt-8">
+        <a href="index.html" class="btn">Zpět na úvodní stránku</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="img/logo.svg" alt="Signals logo" width="120" height="40" class="mb-4">
+          <p>Profesionální řešení pro vaše podnikání</p>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <address>
+            Signals s.r.o.<br>
+            Ulice 123<br>
+            120 00 Praha 2<br>
+            <a href="mailto:signals@signals.cz">signals@signals.cz</a><br>
+            <a href="tel:+420123456789">+420 123 456 789</a>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3>Odkazy</h3>
+          <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="products/_index.html">Produkty</a></li>
+            <li><a href="index.html#sluzby">Služby</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+            <li><a href="privacy-policy.html">Ochrana osobních údajů</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Signals s.r.o. Všechna práva vyhrazena.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html> 

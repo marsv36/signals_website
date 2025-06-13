@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signals - Profesionální řešení pro vaše podnikání</title>
+  <meta name="description" content="Signals nabízí komplexní řešení pro moderní podnikání. Naše služby zahrnují vývoj software, marketing a poradenství.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/signals.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/utilities.min.css">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Signals - Profesionální řešení pro vaše podnikání">
+  <meta property="og:description" content="Signals nabízí komplexní řešení pro moderní podnikání. Naše služby zahrnují vývoj software, marketing a poradenství.">
+  <meta property="og:image" content="https://www.signals.cz/img/og-default.png">
+  <meta property="og:url" content="https://www.signals.cz">
+  <meta property="og:type" content="website">
+  
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" defer></script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied'
+    });
+  </script>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="container mx-auto">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Signals logo" width="120" height="40">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Domů</a></li>
+        <li><a href="products/_index.html">Produkty</a></li>
+        <li><a href="#sluzby">Služby</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container mx-auto">
+      <h1>Profesionální řešení pro vaše podnikání</h1>
+      <p>Pomáháme firmám růst pomocí moderních technologií a inovativních přístupů. Naše řešení jsou navržena na míru vašim potřebám.</p>
+      <a href="#kontakt" class="btn">Kontaktujte nás</a>
+      <a href="products/_index.html" class="btn btn-outline ml-4">Naše produkty</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="sluzby" class="services">
+    <div class="container mx-auto">
+      <h2 class="text-center mb-8">Naše služby</h2>
+      
+      <div class="service-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <h3>Vývoj software</h3>
+          <p>Vytváříme moderní aplikace a systémy na míru vašim potřebám.</p>
+          <ul>
+            <li>Webové aplikace</li>
+            <li>Mobilní aplikace</li>
+            <li>Desktopový software</li>
+          </ul>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+          </svg>
+          <h3>Analýza dat</h3>
+          <p>Transformujeme data na hodnotné informace pro vaše rozhodování.</p>
+          <ul>
+            <li>Business Intelligence</li>
+            <li>Reporting</li>
+            <li>Prediktivní analýzy</li>
+          </ul>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3>Finanční poradenství</h3>
+          <p>Pomáháme optimalizovat finanční procesy a zvyšovat efektivitu.</p>
+          <ul>
+            <li>Finanční analýzy</li>
+            <li>Optimalizace nákladů</li>
+            <li>Investiční strategie</li>
+          </ul>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+          </svg>
+          <h3>Online marketing</h3>
+          <p>Zvyšujeme vaši online viditelnost a přivádíme nové zákazníky.</p>
+          <ul>
+            <li>SEO optimalizace</li>
+            <li>PPC kampaně</li>
+            <li>Sociální média</li>
+          </ul>
+        </div>
+        
+        <!-- Service 5 -->
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <h3>Kybernetická bezpečnost</h3>
+          <p>Chráníme vaše data a systémy před moderními hrozbami.</p>
+          <ul>
+            <li>Bezpečnostní audity</li>
+            <li>Penetrační testování</li>
+            <li>Školení zaměstnanců</li>
+          </ul>
+        </div>
+        
+        <!-- Service 6 -->
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+          </svg>
+          <h3>Automatizace procesů</h3>
+          <p>Zefektivňujeme vaše procesy a šetříme váš čas i peníze.</p>
+          <ul>
+            <li>Workflow automatizace</li>
+            <li>Integrace systémů</li>
+            <li>Optimalizace procesů</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Teaser -->
+  <section class="py-8 bg-gray-light">
+    <div class="container mx-auto">
+      <h2 class="text-center mb-8">Naše produkty</h2>
+      <p class="text-center mb-8">Objevte naše inovativní produkty, které pomáhají firmám po celém světě.</p>
+      <div class="text-center">
+        <a href="products/_index.html" class="btn">Zobrazit všechny produkty</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="kontakt" class="contact">
+    <div class="container mx-auto">
+      <h2 class="text-center mb-8">Kontaktujte nás</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3>Máte dotaz nebo zájem o spolupráci?</h3>
+          <p>Vyplňte kontaktní formulář a my se vám co nejdříve ozveme. Můžete nás také kontaktovat telefonicky nebo e-mailem.</p>
+          
+          <div class="mt-8">
+            <h4>Kontaktní údaje</h4>
+            <address>
+              <p>
+                <strong>Signals s.r.o.</strong><br>
+                Ulice 123<br>
+                120 00 Praha 2
+              </p>
+              <p>
+                <strong>E-mail:</strong> <a href="mailto:signals@signals.cz">signals@signals.cz</a><br>
+                <strong>Telefon:</strong> <a href="tel:+420123456789">+420 123 456 789</a>
+              </p>
+            </address>
+          </div>
+        </div>
+        
+        <div>
+          <form action="https://formspree.io/f/YOUR_ID" method="POST" class="lead-form">
+            <div class="form-group">
+              <input type="text" name="jmeno" placeholder="Jméno" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" name="email" placeholder="E-mail" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" name="telefon" placeholder="Telefon">
+            </div>
+            
+            <div class="form-group">
+              <textarea name="zprava" placeholder="Vaše zpráva…" required></textarea>
+            </div>
+            
+            <!-- spam-honeypot -->
+            <input type="text" name="_honeypot" style="display:none">
+            
+            <!-- success redirect -->
+            <input type="hidden" name="_redirect" value="https://www.signals.cz/dekujeme.html">
+            
+            <button type="submit" class="btn">Odeslat zprávu →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="img/logo.svg" alt="Signals logo" width="120" height="40" class="mb-4">
+          <p>Profesionální řešení pro vaše podnikání</p>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <address>
+            Signals s.r.o.<br>
+            Ulice 123<br>
+            120 00 Praha 2<br>
+            <a href="mailto:signals@signals.cz">signals@signals.cz</a><br>
+            <a href="tel:+420123456789">+420 123 456 789</a>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3>Odkazy</h3>
+          <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="products/_index.html">Produkty</a></li>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="privacy-policy.html">Ochrana osobních údajů</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Signals s.r.o. Všechna práva vyhrazena.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html> 

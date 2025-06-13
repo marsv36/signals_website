@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40">
+  <style>
+    .logo-text { fill: #1a2942; font-family: 'Arial', sans-serif; font-weight: bold; font-size: 24px; }
+    .signal-wave { fill: none; stroke: #ff6600; stroke-width: 2; stroke-linecap: round; }
+  </style>
+  <text x="40" y="26" class="logo-text">SIGNALS</text>
+  <path d="M5,20 C10,10 15,30 20,20 C25,10 30,30 35,20" class="signal-wave" />
+</svg> 

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a2942"/>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="middle">SIGNALS</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="36" fill="#ff6600" text-anchor="middle">Profesionální řešení pro vaše podnikání</text>
+  <path d="M450,240 C500,180 550,300 600,240 C650,180 700,300 750,240" stroke="#ff6600" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg> 

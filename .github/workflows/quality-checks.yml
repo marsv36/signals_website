@@ -1,0 +1,72 @@
+name: Quality Checks
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  html-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      
+      - name: Install html-validate
+        run: npm install -g html-validate
+      
+      - name: Validate HTML files
+        run: |
+          find . -name "*.html" -type f -exec html-validate {} \;
+  
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.11.x
+      
+      - name: Run Lighthouse CI
+        run: |
+          lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
+  
+  build-product-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      
+      - name: Install dependencies
+        run: npm ci || npm install
+      
+      - name: Build product index
+        run: node build-index.js
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code products/_index.html || echo "::set-output name=changed::true"
+      
+      - name: Commit changes if any
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add products/_index.html
+          git commit -m "Auto-update product index"
+          git push 
