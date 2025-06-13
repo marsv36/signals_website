@@ -19,6 +19,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.signals.cz/products/signals-dance.html</loc>
+    <lastmod>2023-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.signals.cz/privacy-policy.html</loc>
     <lastmod>2023-06-01</lastmod>
     <changefreq>yearly</changefreq>
