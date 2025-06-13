@@ -13,6 +13,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
+  // Accordion functionality
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+  if (accordionHeaders.length > 0) {
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', function() {
+        // Toggle active class on the header
+        this.classList.toggle('active');
+        
+        // Toggle visibility of the content
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  }
+  
   // Form submission with AJAX
   const leadForm = document.querySelector('.lead-form');
   if (leadForm) {

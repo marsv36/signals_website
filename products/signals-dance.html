@@ -171,6 +171,150 @@
     </div>
   </section>
 
+  <!-- FAQ Section -->
+  <section class="py-8">
+    <div class="container mx-auto">
+      <h2 class="text-center mb-8">Často kladené otázky</h2>
+      
+      <div class="accordion">
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Jsou s tím spojené nějaké další náklady?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Je potřeba počítat ještě s náklady na samotný provoz BigQuery. Náklady na úložiště, denní nápočty modelem a stahování dat pro reporting vám rádi odhadneme.</p>
+            <p>U menších projektů se většina nákladů vejde do "free-tieru". U většiny projektů se bavíme o rozpočtu do 500 Kč měsíčně.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Máme 3 weby, budeme to platit 3x?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Model je stavěný na zpracování i více GA4 datasetů zároveň. Nemáte-li nějaké vnější důvody (např. právní), aby se data z těch webů počítala odděleně, není třeba model implementovat víckrát.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Spravujeme GA4 pro naše klienty, můžeme nabídnout model našim klientům?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Jasně, ozvěte se nám na model@signals.cz, s pomocí našeho modelu se vám a vašim klientům bude s daty pracovat lépe.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Je možné to někde vidět naživo?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Na veřejném demu pracujeme. Máte-li zájem, ozvěte se nám na model@signals.cz, domluvíme si ukázku a probereme, jestli a jak vám může model pomoci.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Máte slevy pro startupy?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Ano, řekněte si o startup slevu na instalaci a prvních 12 měsíců.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Nepoužíváme BigQuery na zpracování dat, bude nám to k něčemu?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Ano, model se hodí i v tomhle scénáři. Výrazně zlevní a zjednoduší zpracování dat.</p>
+            <p>Google data exportuje do poměrně komplikovaného schématu, ve kterém se mnoho dat opakuje. Pro vaše potřeby nejspíš nepotřebujete všechno a náš model vám data připraví pro práci v Keboole, nebo vaší interní databázi.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 7 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Měříme si do GA4 vlastní eventy a parametry, bude to umět?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Ano.</p>
+            <p>Je to jen otázka nastavení, které parametry chcete modelem zpracovávat.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 8 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Umí model spojit data z GA4 a interního systému?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Sám model to nezvládne, ale my ano. :-)</p>
+            <p>Rádi vám pomůžeme s propojením dalších systémů.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 9 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>Nemáme zapnutý export z GA4, vadí to?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Rozhodně si ho nejdříve zapněte. Data se do BigQuery nenahrávají zpětně.</p>
+            <p>Užitek z modelu můžete mít hned, pokud chcete analyzovat chování uživatelů na webu. Naopak pro vyhodnocování výkonu zdrojů návštěvnosti by se vám hodila už nějaká historie, ale s tím bychom vám částečně dokázali pomoci.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 10 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <h3>V exportu jsou špatně data z google / cpc, jak to řešíte?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p>Využíváme Google Ads Data Transfer. Z něj na základě gclid parametru dokážeme identifikovat, z jaké kampaně uživatelé přišli, a doplníme to do statistik.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Call to Action -->
   <section class="py-8 bg-secondary text-white text-center">
     <div class="container mx-auto">
